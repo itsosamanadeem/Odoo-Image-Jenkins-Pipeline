@@ -7,12 +7,12 @@ pipeline {
 
 	stages {
 
-		stage('test slack'){
-			steps{
-				sh 'NotARealCommand'
+		// stage('test slack'){
+		// 	steps{
+		// 		sh 'NotARealCommand'
 
-			}
-		}
+		// 	}
+		// }
 	    stage('Fetch code') {
             steps {
                git branch: 'atom', url: 'https://github.com/hkhcoder/vprofile-project.git'
