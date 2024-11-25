@@ -1,18 +1,18 @@
 pipeline {
 	agent any
 	tools {
-	    maven "MAVEN3.9"
+	    maven "MAVEN3"
 	    jdk "JDK17"
 	}
 
 	stages {
 
-		stage('test slack'){
-			steps{
-				sh 'NotARealCommand'
+		// stage('test slack'){
+		// 	steps{
+		// 		sh 'NotARealCommand'
 
-			}
-		}
+		// 	}
+		// }
 	    stage('Fetch code') {
             steps {
                git branch: 'atom', url: 'https://github.com/hkhcoder/vprofile-project.git'
