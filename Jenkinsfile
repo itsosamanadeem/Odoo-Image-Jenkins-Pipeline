@@ -15,7 +15,7 @@ pipeline {
 	stages {
 	    stage('Fetch code') {
             steps {
-               git branch: 'main', url: 'https://github.com/itsosamanadeem/Odoo-Image-Jenkins-Pipeline.git'
+               git branch: 'main', url: 'https://github.com/itsosamanadeem/Odoo-Image-Builder.git'
             }
 
 	    }
